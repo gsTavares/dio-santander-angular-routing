@@ -8,7 +8,11 @@ const routes: Routes = [
     path: '', component: TitleComponent, pathMatch: 'full'
   },
   {
-    path: 'portifolio/:id', component: CardComponent
+    path: 'portifolio', component: CardComponent, children: [
+      {
+        path: ':id', component: CardComponent
+      }
+    ]
   },
   {
     path: '**', redirectTo: '' // any route that not exists

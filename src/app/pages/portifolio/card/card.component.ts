@@ -22,9 +22,9 @@ export class CardComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    setInterval(() => {
-      this.router.navigate(['']);
-    }, 5000);
+    // setInterval(() => {
+    //   this.router.navigate(['']);
+    // }, 5000);
   }
 
 }
