@@ -8,7 +8,7 @@ const routes: Routes = [
     path: '', component: TitleComponent, pathMatch: 'full'
   },
   {
-    path: 'portifolio', component: CardComponent
+    path: 'portifolio/:id', component: CardComponent
   },
   {
     path: '**', redirectTo: '' // any route that not exists
