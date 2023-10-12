@@ -9,6 +9,9 @@ const routes: Routes = [
   },
   {
     path: 'portifolio', component: CardComponent
+  },
+  {
+    path: '**', redirectTo: '' // any route that not exists
   }
 ];
 
